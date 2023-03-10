@@ -34,10 +34,11 @@ body {
   .header__main-repeat {
     background-color: #333333;
     height: 1000px;
-    width: 120px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    min-width: 120px;
+    max-width: 120px; }
   .header__main-logo {
     margin-left: 20px;
     margin-top: 30px;
@@ -60,7 +61,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    color: #fff; }
+    color: #fff;
+    background-position: center;
+    min-width: 876px; }
   .header__main-nav {
     display: flex;
     position: absolute;
@@ -215,8 +218,10 @@ body {
     padding: 15px 30px; }
   .body__content-deliverybtn {
     padding-top: 25px;
+    padding-bottom: 20px;
     display: flex;
-    column-gap: 30px; }
+    column-gap: 30px;
+    max-width: 414px; }
   .body__content-delivery {
     margin-bottom: 150px; }
   .body__content-contacts-content {
@@ -255,7 +260,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr; }
   .body__content-contacts-call {
-    width: 416px;
+    max-width: 416px;
     background-color: #5B5B5B;
     color: #fff;
     position: relative;
@@ -273,6 +278,7 @@ body {
     line-height: 140%;
     padding-left: 71px;
     padding-top: 40px;
+    padding-right: 70px;
     position: relative; }
   .body__content-contacts-location-text {
     padding-bottom: 20px; }
@@ -323,7 +329,8 @@ body {
     padding-left: 40px;
     display: flex;
     column-gap: 20px;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    max-width: 349px; }
   .body__content-contacts-call-accentbtn {
     padding: 10px 20px; }
   .body__content-contacts-call-whitebtn {
@@ -341,7 +348,8 @@ body {
 .footer {
   margin-top: 146px;
   background-color: #333333;
-  color: #fff; }
+  color: #fff;
+  min-width: 1000px; }
   .footer__list {
     display: flex;
     justify-content: space-between; }

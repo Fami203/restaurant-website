@@ -49,10 +49,11 @@ body {
     &-repeat {
         background-color: #333333;
         height: 1000px;
-        width: 120px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        min-width: 120px;
+        max-width: 120px;
         
     }
     &-logo {
@@ -81,6 +82,9 @@ body {
         background-repeat: no-repeat;
         width: 100%;
         color: #fff;
+        background-position: center;
+        min-width: 876px;
+        
     }
     &-nav{
         display: flex;
@@ -280,8 +284,10 @@ body {
     }
     &-deliverybtn {
         padding-top: 25px;
+        padding-bottom: 20px;
         display: flex;
-        column-gap: 30px;
+        column-gap: 30px; 
+        max-width: 414px;
     }
     &-delivery {
         margin-bottom: 150px;
@@ -337,7 +343,7 @@ body {
 
 
     &-contacts-call{
-        width: 416px;
+        max-width: 416px;
         //height: 349px;
         background-color: #5B5B5B;
         color: #fff;
@@ -362,6 +368,7 @@ body {
         line-height: 140%;
         padding-left: 71px;
         padding-top: 40px;
+        padding-right: 70px;
         position: relative;
     }
     &-contacts-location-text{
@@ -425,6 +432,7 @@ body {
         display: flex;
         column-gap: 20px;
         padding-bottom: 40px;
+        max-width: 349px;
     }
 
     &-contacts-call-accentbtn {
@@ -450,6 +458,7 @@ body {
     margin-top: 146px;
     background-color: #333333;
     color: #fff;
+    min-width: 1000px;
     &__list {
         display: flex;
         justify-content: space-between;
