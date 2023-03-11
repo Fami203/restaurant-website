@@ -195,6 +195,7 @@ body {
         width: 306px;
         height: 404px;
         margin-top: 55px;
+        position: relative;
     }
     &-choseitem-text {
         font-family: 'Circe';
@@ -209,9 +210,10 @@ body {
     }
     &-choseitem-pricelist {
         display: flex;
-        column-gap: 56px;
-        margin-left: 30px;
+        justify-content: space-between;
         padding-top: 25px;
+        max-width: 246px;
+        margin: 0 auto;
     }
 
     &-choseitem-price{
@@ -226,6 +228,10 @@ body {
         /* black */
 
         color: #333333;
+
+        position: absolute;
+        bottom: 8%;
+        left: 11%;
     }
     &-choseitem-basket {
         font-family: 'Circe';
@@ -240,7 +246,9 @@ body {
         /* white */
 
         color: #FFFFFF;
-
+        position: absolute;
+        bottom: 8%;
+        left: 52%;
 
         background-color: $accent;
 
@@ -605,6 +613,18 @@ body {
         font-size: 16px;
         line-height: 140%;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__list-payimg {
+        width: 40px;
+        height: 40px;
+    }
+    &__list-payimg:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__list-pay {
         display: flex;
         justify-content: center;
         align-items: center;

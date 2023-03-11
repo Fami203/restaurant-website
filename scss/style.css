@@ -143,7 +143,8 @@ body {
   border: 1px solid rgba(51, 51, 51, 0.2);
   width: 306px;
   height: 404px;
-  margin-top: 55px; }
+  margin-top: 55px;
+  position: relative; }
 .header__menu-choseitem-text {
   font-family: 'Circe';
   font-style: normal;
@@ -156,9 +157,10 @@ body {
   color: #333333; }
 .header__menu-choseitem-pricelist {
   display: flex;
-  column-gap: 56px;
-  margin-left: 30px;
-  padding-top: 25px; }
+  justify-content: space-between;
+  padding-top: 25px;
+  max-width: 246px;
+  margin: 0 auto; }
 .header__menu-choseitem-price {
   font-family: 'Circe';
   font-style: normal;
@@ -167,7 +169,10 @@ body {
   line-height: 120%;
   /* or 38px */
   /* black */
-  color: #333333; }
+  color: #333333;
+  position: absolute;
+  bottom: 8%;
+  left: 11%; }
 .header__menu-choseitem-basket {
   font-family: 'Circe';
   font-style: normal;
@@ -178,6 +183,9 @@ body {
   text-align: center;
   /* white */
   color: #FFFFFF;
+  position: absolute;
+  bottom: 8%;
+  left: 52%;
   background-color: #b59571;
   padding: 10px 20px; }
 
@@ -450,6 +458,15 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .footer__list-payimg {
+    width: 40px;
+    height: 40px; }
+  .footer__list-payimg:not(:last-child) {
+    margin-right: 30px; }
+  .footer__list-pay {
     display: flex;
     justify-content: center;
     align-items: center; }
