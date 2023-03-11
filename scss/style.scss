@@ -27,6 +27,12 @@ $accent: rgba(181, 149, 113, 1);
      padding: 0 15px;
      margin: 0 auto;
  }
+ .container-fluid {
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 15px;
+ }
+
  html {
      width: 100%;
      max-width: 100%;
@@ -43,9 +49,11 @@ body {
 .header__main {
     display: flex;
     justify-content: space-between;
-    height: 1000px;
     position: relative;
 
+    &menu {
+        width: 120px;
+    }
     &-repeat {
         background-color: #333333;
         height: 1000px;
@@ -83,7 +91,7 @@ body {
         width: 100%;
         color: #fff;
         background-position: center;
-        min-width: 876px;
+        min-width: 881px;
         
     }
     &-nav{
@@ -122,6 +130,121 @@ body {
         font-weight: 700;
         font-size: 54px;
         line-height: 140%;
+    }
+    &-profile {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 34px;
+        padding-top: 32px;
+    }
+    &-cabinet {
+        color: #333333;
+        font-family: 'Circe';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+.header__menu {
+    &-list {
+        display: flex;
+        column-gap: 40px;
+    }
+    &-listwrapper {
+        padding-top: 63px;
+    }
+    &-listitem {
+        font-family: 'Circe';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #333333;
+    }
+    &-listitem-link{
+        color: #333333;
+        position: relative;
+    }
+
+    &-listitem-link--active{
+        &::after {
+            content: '';
+            background-color: $accent;
+            width: 100%;
+            height: 3px;
+            display: block;
+        
+            position: relative;
+            top: 5px;
+            left: 0;
+
+    }
+    }
+
+    &-chose {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 15px;
+    }
+
+
+
+    &-choseitem {
+        border: 1px solid rgba(51, 51, 51, 0.2);
+        width: 306px;
+        height: 404px;
+        margin-top: 55px;
+    }
+    &-choseitem-text {
+        font-family: 'Circe';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        text-align: center;
+        padding: 0 30px;
+        margin-top: 30px;
+        color: #333333;
+    }
+    &-choseitem-pricelist {
+        display: flex;
+        column-gap: 56px;
+        margin-left: 30px;
+        padding-top: 25px;
+    }
+
+    &-choseitem-price{
+        font-family: 'Circe';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        /* or 38px */
+
+
+        /* black */
+
+        color: #333333;
+    }
+    &-choseitem-basket {
+        font-family: 'Circe';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+        /* or 22px */
+
+        text-align: center;
+
+        /* white */
+
+        color: #FFFFFF;
+
+
+        background-color: $accent;
+
+        padding: 10px 20px;
     }
 }
 
@@ -231,7 +354,7 @@ body {
     &-menu-description {
         display: flex;
         justify-content: space-between;
-        column-gap: 134px;
+        column-gap: 228px;
     }
     &-mainMenu {
         display: flex;
@@ -292,169 +415,177 @@ body {
     &-delivery {
         margin-bottom: 150px;
     }
-
-&-contacts-content {padding-top: 153px;}
-
-    &-contacts-timeitem{
-        max-width: 196px;
-        height: 132px;
-        & p {
-            font-family: 'Circe';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 140%;
-
-            color: #333333;
-            // width: 196px;
-        }
-        & h2 {
-            font-family: 'Circe';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 64px;
-            line-height: 120%;
-
-            color: $accent;
-        }
-        & h3 {
-            font-family: 'Circe';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 120%;
-
-            color: $accent;
-            padding-top: 29px;
-            padding-left: 10px;
-        }
+    &-contactitem{
+        width: 100px;
     }
-    &-contacts-minut {
-        display: flex;
-    }
-    &-contacts-time{
-        width: 416px;
-        height: 314px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+}
 
 
-
-
-    &-contacts-call{
-        max-width: 416px;
-        //height: 349px;
-        background-color: #5B5B5B;
-        color: #fff;
+.body__content {
+    &-contactswrapper{
         position: relative;
-        z-index: 10;
+        display: flex;
+        justify-content: space-between;
     }
-
-    &-contacts-map {
-        max-width: 746px;
+    &-contactitem{
+        display: flex;
+        flex-wrap: wrap;
+        width: 450px;
+        margin-top: 150px;
+    }
+    &-contactelement{
+        width: 200px;
+        margin-right: 25px;
+        margin-bottom: 50px;
+    }
+    &-contacttitle{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: $accent;
+    & span{
+        font-size: 64px;
+        margin-right: 15px;
+    }
+    }
+    &-contacttext{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #333333;
+    }
+    &-contactimg{
+        margin-top: 80px;
+        min-width: 746px;
         height: 450px;
-        position: absolute;
-        margin-top: -55px;
     }
 
+    &-contactbook{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%,-38%);
+
+         min-width: 416px;
+         height: 349px;
+
+        background-color: #5B5B5B;
+
+    }
+
+    &-contactbook-text {
+        padding-top: 40px;
+        margin-left: 42px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-right: 57px;
 
 
-    &-contacts-location{
+
         font-family: 'Circe';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 140%;
-        padding-left: 71px;
-        padding-top: 40px;
-        padding-right: 70px;
-        position: relative;
+        
     }
-    &-contacts-location-text{
-        &::after{
-            content: "";
-            background-image: url(../img/location.svg);
+    &-contactbook-textitem-mob  {
+        padding-left: 30px;
+
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/call.svg);
+            background-repeat: no-repeat;
             width: 12px;
             height: 15px;
-            position: absolute;
-            left: 43px;
-            bottom: 74px;
+            left: 0;
+            top: 3px;
+
         }
-        padding-bottom: 20px;
     }
-    &-contacts-location-mob {
+    &-contactbook-textitem-location {
+        padding-left: 30px;
+
+        position: relative;
         &::after {
-            content: "";
-            background-image: url(../img/call.svg);
-            width: 13px;
-            height: 13px;
+            content: '';
             position: absolute;
-            left: 43px;
-            bottom: 32px;
+            background-image: url(../img/location.svg);
+            background-repeat: no-repeat;
+            width: 13px;
+            height: 15px;
+            left: 0;
+            top: 3px;
         }
-        padding-bottom: 25px;
     }
-    &-contacts-timetable {
+
+
+
+    &-contactbook-time {
+        display: flex;
+        column-gap: 15px;
+    }
+
+    &-contactbook-timetable {
         padding-left: 40px;
+        padding-top: 25px;
     }
-    &-contacts-timetable h5 {
+    &-contactbook-timetable h3 {
         font-family: 'Circe';
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 140%;
-        padding-bottom: 15px;
+        margin-bottom: 15px;
     }
-    &-contacts-timetable-first {
-        padding-bottom: 30px;
-        display: flex;
-    }
-
-    &-contacts-timetable-first h4{
+    &-contactbook-time h4 {
         font-family: 'Circe';
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 140%;
     }
-    &-contacts-timetable-first p{
+
+    &-contactbook-time p {
         font-family: 'Circe';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 140%;
-        padding-left: 14px;
     }
 
-    &-contacts-call-btn {
-        padding-left: 40px;
-        display: flex;
-        column-gap: 20px;
-        padding-bottom: 40px;
-        max-width: 349px;
+    &-contactbook-btnlist {
+        margin-left: 40px;
+        margin-top: 30px;
+        margin-bottom: 40px;
     }
-
-    &-contacts-call-accentbtn {
+    &-contactbook-accentbtn{
         padding: 10px 20px;
+        margin-right: 20px;
+
     }
 
-    &-contacts-call-whitebtn {
+    &-contactbook-whitebtn{
         padding: 10px 20px;
         border: 1px solid #FFFFFF;
+        color: #fff;
         font-family: 'Circe';
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 140%;
-        color: #fff;
     }
-    &-contacts-content {
-        display: flex;
-    }
+
+
+
 }
 
 .footer {
+    min-width: 1215px!important;
     margin-top: 146px;
     background-color: #333333;
     color: #fff;
@@ -479,6 +610,5 @@ body {
         align-items: center;
     }
 }
-
 
 
