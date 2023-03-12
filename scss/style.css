@@ -171,8 +171,8 @@ body {
   /* black */
   color: #333333;
   position: absolute;
-  bottom: 8%;
-  left: 11%; }
+  bottom: 2.2rem;
+  left: 1.9rem; }
 .header__menu-choseitem-basket {
   font-family: 'Circe';
   font-style: normal;
@@ -184,8 +184,8 @@ body {
   /* white */
   color: #FFFFFF;
   position: absolute;
-  bottom: 8%;
-  left: 52%;
+  bottom: 2.2rem;
+  left: 9.75rem;
   background-color: #b59571;
   padding: 10px 20px; }
 
@@ -470,5 +470,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+
+.mixitup-control-active::after {
+  content: '';
+  background-color: #b59571;
+  width: 100%;
+  height: 3px;
+  display: block;
+  position: relative;
+  top: 5px;
+  left: 0; }
 
 /*# sourceMappingURL=style.css.map */
