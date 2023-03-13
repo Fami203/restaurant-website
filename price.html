@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="./reset.css">
+
+    <script src="./js/jquary.js"></script>
+    <script src="./js/Mixitup/dist/mixitup.min.js"></script>
+    
+
+
+
+    <title>Menu</title>
+</head>
+<body>
+    
+        <header class="header__main">
+            <div class="header__main-repeat header__mainmenu">
+                <div class="header__main-repeat__upblock">
+                    <a href="index.html"><img class="header__main-logo" src="./img/logo.svg" alt="logo"></a>
+                    <button class="header__main-burger"><img src="./img/header/burger-btn.svg" alt="burger btn"></button>
+                </div>
+                <div class="header__main-repeat__downblock">
+                    <ul class="header__main-icon">
+                        <li class="header__main-listlink"><a class="header__main-link" href="#"><img class="header__main-linkimg" src="./img/header/youtube.svg" alt="youtube"></a></li>
+                        <li class="header__main-listlink"><a class="header__main-link" href="#"><img class="header__main-linkimg" src="./img/header/VK.svg" alt="vk"></a></li>
+                        <li class="header__main-listlink"><a class="header__main-link" href="#"><img class="header__main-linkimg" src="./img/header/telegram.svg" alt="telegram"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="container-fluid">
+                <div class="header__main-profile">
+                    <a class="header__main-cabinet" href="#">Личный кабинет</a>
+                    <a class="header__main-account" href="#"><img src="./img/Menu/account.svg" alt="account"></a>
+                    <button class="header__main-purchase"><img src="./img/Menu/purchase.svg" alt="purchase"></button>
+                </div>
+                <div class="header__menu-listwrapper">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-listitem"><button class="header__menu-listitem-link header__menu-listitem-link--active" data-filter=".category-1">Завтраки</button></li>
+                        <li class="header__menu-listitem"><button class="header__menu-listitem-link" data-filter=".category-2">Raw</button></li>
+                        <li class="header__menu-listitem"><button class="header__menu-listitem-link" data-filter=".category-3">Холодные закуски</button></li>
+                        <li class="header__menu-listitem"><button class="header__menu-listitem-link" data-filter=".category-4">Брускетты</button></li>
+                        <li class="header__menu-listitem"><button class="header__menu-listitem-link" data-filter=".category-5">К вину</button></li>
+                        <li class="header__menu-listitem"><button class="header__menu-listitem-link" data-filter=".category-6">Салаты</button></li>
+                        <li class="header__menu-listitem"><button class="header__menu-listitem-link" data-filter=".category-7">Супы</button></li>
+                        <li class="header__menu-listitem"><button class="header__menu-listitem-link" data-filter=".category-8">Паста и ризотто</button></li>
+                        <li class="header__menu-listitem"><button class="header__menu-listitem-link" data-filter=".category-9">Мясо</button></li>
+                        <li class="header__menu-listitem"><button class="header__menu-listitem-link" data-filter=".category-10">Рыба</button></li>
+                        <li class="header__menu-listitem"><button class="header__menu-listitem-link" data-filter=".category-11">Grill</button></li>
+                        <li class="header__menu-listitem"><button class="header__menu-listitem-link" data-filter=".category-12">Мангал</button></li>
+                        <li class="header__menu-listitem"><button class="header__menu-listitem-link" data-filter=".category-13">Гарниры</button></li> 
+                    </ul>
+                </div>
+
+                <section class="body__menu">
+
+
+
+                    <div class="body__menu-photo">
+                        <div class="body__menu-photoitem-big">
+                            <img src="./img/count-info/element.jpg" alt="food">
+                        </div>
+                        <div class="body__menu-photoitem-small">
+                            <img class="body__menu-photoitem-smallitem" src="./img/count-info/element.jpg" alt="food">
+                            <img class="body__menu-photoitem-smallitem" src="./img/count-info/element.jpg" alt="food">
+                            <img class="body__menu-photoitem-smallitem" src="./img/count-info/element.jpg" alt="food">
+                        </div>
+                    </div>
+
+
+
+                    <div class="body__menu-content">
+                        <h3 class="body__menu-content-titlename">Яичница-глазунья из трех яиц</h3>
+                        <div class="body__menu-content-price">
+                            <p class="body__menu-content-pricetext">250 ₽</p>
+                            <p class="text-opacity body__menu-content-slash">/</p>
+                            <p class="body__menu-content-gramm text-opacity">400 грамм</p>
+                        </div>
+
+                        <p class="body__menu-content-textcount">Количество порций:</p>
+                        
+                        <div class="body__menu-content-count">
+
+
+
+                            <div class="body__menu-content-countinput-wrapper">
+                                <input class="body__menu-content-count-input" type="number" id="counter" name="tentacles" value="1" min="1" max="100" readonly>
+                                <div class="body__menu-content-btnwrapper">
+                                    <button class="body__menu-content-btn-counter btn-increment" onclick="incrementValue()"><img src="./img/count-info/up.svg" alt=" up arrow"></button>
+                                    <button class="body__menu-content-btn-counter btn-decrement" onclick="decrementValue()"><img src="./img/count-info/down.svg" alt="down arrow"></button>
+                                </div>
+                              </div>
+
+
+
+                            <button class="accent-btn body__menu-content-count-btnin">В корзину</button>
+                        </div>
+
+                        <h3 class="body__menu-content-titleadd">Сделать еще вкуснее</h3>
+                        <div class="body__menu-content-additionally-wrapper">
+                            <div class="body__menu-content-additionally">
+                                <div class="body__menu-content-additionally-item">
+                                    <div class="body__menu-content-additionally-itemtext">
+                                        <p class="text-opacity body__menu-content-additionally-text">Тигровые креветки 60 г</p>
+                                        <p class="body__menu-content-additionally-price">450 ₽</p>
+                                    </div>
+                                    <input class="body__menu-content-additionally-checkbox" type="checkbox" >
+                                </div>
+    
+                            </div>
+                            <div class="body__menu-content-additionally">
+                                <div class="body__menu-content-additionally-item">
+                                    <div class="body__menu-content-additionally-itemtext">
+                                        <p class="text-opacity body__menu-content-additionally-text">Томаты / паприка</p>
+                                        <p class="body__menu-content-additionally-price">80 ₽</p>
+                                    </div>
+                                    <input class="body__menu-content-additionally-checkbox" type="checkbox" >
+                                </div>
+    
+                            </div>
+                            <div class="body__menu-content-additionally">
+                                <div class="body__menu-content-additionally-item">
+                                    <div class="body__menu-content-additionally-itemtext">
+                                        <p class="text-opacity body__menu-content-additionally-text">Бекон</p>
+                                        <p class="body__menu-content-additionally-price">120 ₽</p>
+                                    </div>
+                                    <input class="body__menu-content-additionally-checkbox" type="checkbox" >
+                                </div>
+    
+                            </div>
+                            <div class="body__menu-content-additionally">
+                                <div class="body__menu-content-additionally-item">
+                                    <div class="body__menu-content-additionally-itemtext">
+                                        <p class="text-opacity body__menu-content-additionally-text">Сыр чеддер 30 г</p>
+                                        <p class="body__menu-content-additionally-price">80 ₽</p>
+                                    </div>
+                                    <input class="body__menu-content-additionally-checkbox" type="checkbox" >
+                                </div>
+    
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </section>
+                
+
+
+
+            </div>
+
+
+
+
+
+        </header>
+
+
+        <section class="body__content fix__content">
+            
+            
+
+
+                <div class="container">
+                    <div class="body__content-contacts">
+                        <h6 class="infotitle">контакты</h6>
+                        <div class="body__content-contactswrapper">
+                            <div class="body__content-contactitems">
+                                <ul class="body__content-contactitem">
+                                    <li class="body__content-contactelement">
+                                        <h5 class="body__content-contacttitle"><span>2</span>мин</h5>
+                                        <p class="body__content-contacttext">из центра</br> Санкт-Петербурга</p>
+                                    </li>
+                                    <li class="body__content-contactelement">
+                                        <h5 class="body__content-contacttitle"><span>12</span>мин</h5>
+                                        <p class="body__content-contacttext">из города</br> Зеленогорск</p>
+                                    </li>
+                                    <li class="body__content-contactelement">
+                                        <h5 class="body__content-contacttitle"><span>42</span>мин</h5>
+                                        <p class="body_content-contacttext">из аэропорта</br> Пулково</p>
+                                    </li>
+                                   <li class="body__content-contactelement">
+                                        <h5 class="body__content-contacttitle"><span>52</span>мин</h5>
+                                        <p class="body__content-contacttext">из города</br> Павловск</p>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <div class="body__content-contactitems">
+                                <img class='body__content-contactimg' src="./img/body__content/map.jpg" alt="map">
+        
+        
+                                <div class="body__content-contactbook">
+                                    <div class="body__content-contactbook-text">
+                                        <address class="body__content-contactbook-textitem-location">Санкт-Петербург,
+                                            Северная дорога, 11 </address>
+                                        <p class="body__content-contactbook-textitem-mob">+7 (921) 777-77-77</p>
+                                    </div>
+        
+        
+                                    <div class="body__content-contactbook-timetable">
+                                        <h3>Время работы</h3>
+                                    <div class="body__content-contactbook-time">
+                                        <h4>Вск-Чт</h4>
+                                        <p>с 12:00 до 23:00</p>
+                                    </div>
+                                    <div class="body__content-contactbook-time">
+                                        <h4>Пт-Сб</h4>
+                                        <p>с 12:00 до 03:00</p>
+                                    </div>
+                                    </div>
+        
+                                    <div class="body__content-contactbook-btnlist">
+                                        <button class="body__content-contactbook-accentbtn accent-btn">Бронь столика</button>
+                                        <button class="body__content-contactbook-whitebtn white-btn">Задать вопрос</button>
+            
+                                    </div>
+        
+                                </div>
+        
+        
+                            </div>
+        
+        
+                            
+        
+        
+        
+        
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <ul class="footer__list">
+                        <li class="footer__logo"><a href="#"><img src="./img/logo.svg" alt="logo"></a></li>
+                        <li class="footer__text">Политика конфиденциальности</li>
+                        <div class="footer__list-pay">
+                            <img class="footer__list-payimg" src="./img/VISA.svg" alt="visa">
+                            <img class="footer__list-payimg" src="./img/MIR.svg" alt="mir">
+                            <img class="footer__list-payimg" src="./img/MASTERCARD.svg" alt="mastercard">
+                        </div>
+                        <li class="footer__text">Дизайн d-e-n.ru</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+
+<script src="./js/main.js"></script>
+
+</html>
