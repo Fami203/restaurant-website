@@ -15,6 +15,12 @@ const menublock = document.querySelector('.menu-open')
 const showbody = document.querySelector('.showbody')
 const closebtn = document.querySelector('.menu-close')
 
+
+const bookBtn = document.querySelector('.header__main-nav-linkbtn');
+const book = document.querySelector('.table-booking');
+const bg_dark = document.querySelector('.bg-wrapper');
+const bookBtnClose = document.querySelector('.table-booking__btn');
+
 btnmenu.addEventListener('click', function() {
     menublock.classList.toggle('none');
     showbody.classList.toggle('none')
@@ -26,6 +32,8 @@ closebtn.addEventListener('click', function() {
     showbody.classList.toggle('none')
 })
 }
+
+if(document.getElementById('counter')){
 
 
 function incrementValue() {
@@ -44,3 +52,20 @@ function incrementValue() {
   }
 
 
+}
+
+
+if(document.querySelector('.header__main-burger')) {
+
+bookBtn.addEventListener('click', function(){
+    book.classList.toggle('table-booking--close')
+    bg_dark.classList.toggle('bg-wrapper--dark')
+}
+)
+
+bookBtnClose.addEventListener('click', function(){
+    book.classList.add('table-booking--close')
+    bg_dark.classList.remove('bg-wrapper--dark')
+})
+
+}
