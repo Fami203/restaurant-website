@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: 'Circe';
 	src: url('../font/Circe-Bold.eot');
@@ -20,7 +21,13 @@
 }
 
 
+
+
 $accent: rgba(181, 149, 113, 1);
+
+html,body {
+    overflow-x: hidden !important;
+}
 
  .container {
      max-width: 1266px;
@@ -103,7 +110,7 @@ body {
         width: 100%;
         color: #fff;
         background-position: center;
-        min-width: 881px;
+        min-width: 1113px;
         
     }
     &-nav{
@@ -470,7 +477,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         width: 450px;
-        margin-top: 150px;
+        margin-top: 200px;
     }
     &-contactelement{
         width: 200px;
@@ -502,8 +509,8 @@ body {
     &-contactbook{
         color: #fff;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 17rem;
+        left: 38rem;
         transform: translate(-55%,-38%);
 
          min-width: 416px;
@@ -624,11 +631,12 @@ body {
 }
 
 .footer {
-    min-width: 1215px!important;
+    max-width: 100%;
     margin-top: 146px;
     background-color: #333333;
     color: #fff;
-    min-width: 1000px;
+    padding-bottom: 1px;
+    height: 125px;
     &__list {
         display: flex;
         justify-content: space-between;
@@ -1120,3 +1128,21 @@ html {
     height: 100vh;
     background-color: rgba( #000000,  0.456789);
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

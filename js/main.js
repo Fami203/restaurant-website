@@ -16,14 +16,9 @@ const showbody = document.querySelector('.showbody')
 const closebtn = document.querySelector('.menu-close')
 
 
-const bookBtn = document.querySelector('.header__main-nav-linkbtn');
-const book = document.querySelector('.table-booking');
-const bg_dark = document.querySelector('.bg-wrapper');
-const bookBtnClose = document.querySelector('.table-booking__btn');
 
-const counterPurchase = document.querySelector('.header__main-purchase-count')
-const btnPurchase = document.querySelectorAll('.header__menu-choseitem-basket')
-let counterPurchaseText = counterPurchase.textContent
+
+
 
 
 btnmenu.addEventListener('click', function() {
@@ -60,28 +55,42 @@ function incrementValue() {
 }
 
 
-if(document.querySelector('.bookBtn')) {
+const bookBtn = document.querySelector('.header__main-nav-linkbtn');
+const book = document.querySelector('.table-booking');
+const bg_dark = document.querySelector('.bg-wrapper');
+const bookBtnClose = document.querySelector('.table-booking__btn');
 
-bookBtn.addEventListener('click', function(){
-    book.classList.toggle('table-booking--close')
-    bg_dark.classList.toggle('bg-wrapper--dark')
-}
-)
+if(document.querySelector('.header__main-nav-linkbtn')) {
 
-bookBtnClose.addEventListener('click', function(){
-    book.classList.add('table-booking--close')
-    bg_dark.classList.remove('bg-wrapper--dark')
-})
-}
-
-if(document.querySelectorAll('.header__menu-choseitem-basket')){
-
-btnPurchase.forEach (function(item){
-    item.addEventListener('click', function(){
-        counterPurchase.classList.remove('none')
-        counterPurchaseText++;
-        counterPurchase.textContent = counterPurchaseText;
+    bookBtn.addEventListener('click', function(){
+        book.classList.toggle('table-booking--close')
+        bg_dark.classList.toggle('bg-wrapper--dark')
+    }
+    )
+    
+    bookBtnClose.addEventListener('click', function(){
+        book.classList.add('table-booking--close')
+        bg_dark.classList.remove('bg-wrapper--dark')
     })
-}) 
+    
+    }
 
-}
+
+ 
+    if (document.querySelector('.header__menu-choseitem-basket')) {
+        const counterPurchase = document.querySelector('.header__main-purchase-count');
+        let counterPurchaseText = counterPurchase.textContent;
+        const btnPurchase = document.querySelectorAll('.header__menu-choseitem-basket');
+
+   btnPurchase.forEach(function(item) {
+       item.addEventListener('click', function() {
+        counterPurchase.classList.remove('none') 
+       counterPurchaseText++;
+       counterPurchase.textContent = counterPurchaseText;
+     })
+   })
+ }
+
+
+
+ 
