@@ -119,6 +119,21 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%; }
+  .header__main-purchase-counter {
+    position: relative; }
+  .header__main-purchase-count {
+    margin-top: 2px;
+    padding: 0 3px;
+    position: absolute;
+    background-color: #b59571;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    top: 1rem;
+    right: -1rem; }
 
 .header__menu-list {
   display: flex;

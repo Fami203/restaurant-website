@@ -157,6 +157,23 @@ body {
         font-size: 16px;
         line-height: 140%;
     }
+    &-purchase-counter {
+        position: relative;
+    }
+    &-purchase-count {
+        margin-top: 2px;
+        padding: 0 3px;
+        position: absolute;
+        background-color: $accent;
+        min-width: 20px;
+        min-height: 20px;
+        border-radius: 10px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        top: 1rem;
+        right: -1rem;
+    }
 }
 .header__menu {
     &-list {

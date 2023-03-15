@@ -21,6 +21,11 @@ const book = document.querySelector('.table-booking');
 const bg_dark = document.querySelector('.bg-wrapper');
 const bookBtnClose = document.querySelector('.table-booking__btn');
 
+const counterPurchase = document.querySelector('.header__main-purchase-count')
+const btnPurchase = document.querySelectorAll('.header__menu-choseitem-basket')
+let counterPurchaseText = counterPurchase.textContent
+
+
 btnmenu.addEventListener('click', function() {
     menublock.classList.toggle('none');
     showbody.classList.toggle('none')
@@ -55,7 +60,7 @@ function incrementValue() {
 }
 
 
-if(document.querySelector('.header__main-burger')) {
+if(document.querySelector('.bookBtn')) {
 
 bookBtn.addEventListener('click', function(){
     book.classList.toggle('table-booking--close')
@@ -67,5 +72,16 @@ bookBtnClose.addEventListener('click', function(){
     book.classList.add('table-booking--close')
     bg_dark.classList.remove('bg-wrapper--dark')
 })
+}
+
+if(document.querySelectorAll('.header__menu-choseitem-basket')){
+
+btnPurchase.forEach (function(item){
+    item.addEventListener('click', function(){
+        counterPurchase.classList.remove('none')
+        counterPurchaseText++;
+        counterPurchase.textContent = counterPurchaseText;
+    })
+}) 
 
 }
