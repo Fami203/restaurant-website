@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 1220px) {
   .body__content-contacttitle {
     font-size: 24px; }
@@ -57,12 +58,173 @@
     padding-top: 123px !important; }
 
   .body__content-info-firsttext {
-    padding-top: 50px !important; } }
+    padding-top: 50px !important; }
+
+  .header__main-nav {
+    padding-right: 0px; } }
 @media (max-width: 869px) {
   .body__content-mainMenu-description {
     padding-bottom: 9px; }
 
   .body__content-contacts {
-    padding-top: 70px; } }
+    padding-top: 70px; }
+
+  .header__main-nav {
+    padding-right: 0px; } }
+@media (max-width: 780px) {
+  .text {
+    font-size: 14px; }
+
+  .body__content-info-title {
+    margin-right: 20px; }
+
+  .body__content-menu-description {
+    column-gap: 40px; }
+
+  .body__content-info {
+    margin-bottom: 50px; }
+
+  .body__content {
+    margin-top: 100px; }
+
+  .body__content-contactitem {
+    margin-top: 100px; }
+
+  .body__content-contactbook {
+    top: 10rem;
+    left: 34rem; }
+
+  .header__main-nav-linkbtn {
+    margin-right: 10px; }
+
+  .header__main-nav {
+    padding-right: 0px; } }
+@media (max-width: 690px) {
+  .body__content-contactbook-text {
+    padding-top: 35px;
+    margin-left: 22px; }
+
+  .body__content-contactbook-timetable {
+    padding-left: 20px; }
+
+  .body__content-contactbook-btnlist {
+    margin-left: 20px; }
+
+  .body__content-contactbook {
+    height: 329px; } }
+@media (max-width: 660px) {
+  .header__main-nav {
+    display: none; }
+
+  .header__main-title {
+    font-size: 36px;
+    margin-left: 90px; }
+
+  .body__content-mainMenu {
+    flex-direction: column;
+    row-gap: 144px;
+    height: 636px;
+    align-items: center; }
+
+  .body__content-mainMenu__titlemedia {
+    top: -23rem;
+    left: 12.5rem; }
+
+  .body__content-mainMenu__titlemedia2 {
+    top: 0rem;
+    left: -11rem; }
+
+  .infotitle {
+    padding-right: 0px; }
+    .infotitle::after {
+      margin-left: 20px; }
+
+  .body__content-contactbook {
+    min-width: 480px; }
+
+  .body__content-info-textcontent {
+    margin-left: -170px; }
+
+  .body__content-menu-description {
+    margin-left: -170px;
+    height: 250px; } }
+@media (max-width: 610px) {
+  .body__content-contacts {
+    height: 800px; }
+
+  .body__content-contactitem {
+    justify-content: center;
+    align-items: center; }
+
+  .body__content-contactbook {
+    top: 32rem;
+    left: 17rem; }
+
+  .body__content-contactbook {
+    min-width: 416px; }
+
+  .body__content-contactbook-timetable  {
+    padding-left: 40px; }
+
+  .body__content-contactbook-text {
+    padding-top: 40px;
+    margin-left: 42px; }
+
+  .body__content-contactbook-btnlist  {
+    margin-left: 40px; }
+
+  .body__content-contactbook-timetable {
+    padding-left: 40px; }
+
+  .body__content-contactbook-btnlist {
+    margin-left: 40px; }
+
+  .footer__text {
+    display: none; }
+
+  .footer__list {
+    justify-content: center; } }
+@media (max-width: 520px) {
+  .body__content-menu-description {
+    margin-left: -200px; }
+
+  .body__content-info-textcontent {
+    margin-left: -200px; }
+
+  .body__content-info-title {
+    margin-right: 0px; }
+
+  .body__content-menu-description {
+    column-gap: 23px; }
+
+  .body__content-menu-description {
+    height: 330px; }
+
+  .body__content-contactbook {
+    left: 15rem; } }
+@media (max-width: 450px) {
+  .body__content-contactbook {
+    left: 14.5rem; } }
+@media (max-width: 400px) {
+  .body__content-info-title {
+    font-size: 42px; }
+
+  .body__content-menu-tiltemob {
+    font-size: 42px; }
+
+  .header__main-repeat {
+    min-width: 100px; }
+
+  .header__main-logo {
+    margin-left: 7px; }
+
+  .header__main-burger {
+    margin-left: 33px; }
+
+  .header__main-icon {
+    margin-left: 33px; } }
+@media (max-width: 420px) {
+  .header__main-title {
+    display: none; } }
 
 /*# sourceMappingURL=media.css.map */
