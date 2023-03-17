@@ -745,7 +745,7 @@ html {
 .menu {
     &-open {
         position: relative;
-        z-index: 11;
+        z-index: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -800,6 +800,7 @@ html {
         font-weight: 700;
         font-size: 24px;
         line-height: 140%;
+        margin: 0 28px;
     }
 }
 

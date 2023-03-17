@@ -192,6 +192,11 @@
 }
 
 @media(max-width: 610px) {
+
+    .menu-text p {
+        font-size: 36px;
+    }
+
     .body__content-contacts {
         height: 800px;
     }
@@ -279,6 +284,17 @@
 }
 @media (max-width: 420px) {
     .header__main-title {
+        display: none;
+    }
+}
+
+@media (max-height: 800px) {
+    .menu-open {
+        row-gap: 50px;
+    }
+}
+@media (max-height: 700px) {
+    .menu-icon {
         display: none;
     }
 }

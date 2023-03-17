@@ -149,6 +149,9 @@
     margin-left: -170px;
     height: 250px; } }
 @media (max-width: 610px) {
+  .menu-text p {
+    font-size: 36px; }
+
   .body__content-contacts {
     height: 800px; }
 
@@ -225,6 +228,12 @@
     margin-left: 33px; } }
 @media (max-width: 420px) {
   .header__main-title {
+    display: none; } }
+@media (max-height: 800px) {
+  .menu-open {
+    row-gap: 50px; } }
+@media (max-height: 700px) {
+  .menu-icon {
     display: none; } }
 
 /*# sourceMappingURL=media.css.map */

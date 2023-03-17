@@ -55,25 +55,21 @@ function incrementValue() {
 }
 
 
-const bookBtn = document.querySelector('.header__main-nav-linkbtn');
+const bookBtn = document.querySelectorAll('.header__main-nav-linkbtn');
 const book = document.querySelector('.table-booking');
 const bg_dark = document.querySelector('.bg-wrapper');
 const bookBtnClose = document.querySelector('.table-booking__btn');
 
-if(document.querySelector('.header__main-nav-linkbtn')) {
-
-    bookBtn.addEventListener('click', function(){
+bookBtn.forEach(function(item) {
+    item.addEventListener('click', function(){
         book.classList.toggle('table-booking--close')
         bg_dark.classList.toggle('bg-wrapper--dark')
-    }
-    )
-    
+    })
     bookBtnClose.addEventListener('click', function(){
         book.classList.add('table-booking--close')
         bg_dark.classList.remove('bg-wrapper--dark')
     })
-    
-    }
+})
 
 
  
