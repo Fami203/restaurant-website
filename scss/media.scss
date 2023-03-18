@@ -14,7 +14,21 @@
             width: 126px;
         }
     }
+    .header__main-profile {
+        margin-right: 40px;
+    }
+    .header__menu-list {
+        overflow-y: scroll;
+        max-width: 1000px;
+    }
 }
+
+@media(max-width: 1100px) {
+    .header__main-profile {
+        margin-right: 140px;
+    }
+}
+
 @media(max-width: 1000px) {
     .body__content {
         &-info-secondtext {
@@ -39,6 +53,31 @@
 
     .body__content-delivery {
         margin-bottom: 300px;
+    }
+    
+    .header__menu-list {
+        max-width: 850px;
+    }
+    .header__main-profile {
+        margin-right: 100px;
+    }
+    .header__menu-chose {
+        width: 950px;
+    }
+
+    .header__menu-choseitem {
+        width: 270px;
+        height: 400px;
+    }
+
+    .header__menu-choseitem-basket {
+        font-size: 14px;
+        left: 8.5rem;
+    }
+
+    .header__menu-choseitem-price {
+        left: 1.5rem;
+        font-size: 28px;
     }
     
 }
