@@ -27,6 +27,19 @@
     .header__main-profile {
         margin-right: 140px;
     }
+    .header__menu-choseitem {
+        width: 270px;
+        height: 400px;
+    }
+    .header__menu-choseitem-basket {
+        font-size: 14px;
+        left: 8.5rem;
+    }
+
+    .header__menu-choseitem-price {
+        left: 1.5rem;
+        font-size: 28px;
+    }
 }
 
 @media(max-width: 1000px) {
@@ -68,6 +81,7 @@
     .header__menu-choseitem {
         width: 270px;
         height: 400px;
+        margin-top: 25px;
     }
 
     .header__menu-choseitem-basket {
@@ -83,6 +97,9 @@
 }
 
 @media(max-width: 954px) {
+    .header__menu-listitem {
+        padding-bottom: 5px;
+    }
 
     .body__content-contacts {
         padding-top: 100px;
@@ -102,17 +119,53 @@
         font-size: 48px;
         margin-left: 130px;
     }
+    .header__menu-list {
+        max-width: 785px;
+    }
 
+    .header__menu-choseitem-price {
+        left: 1rem;
+        font-size: 24px;
+    }
+    .header__menu-choseitem {
+        width: 220px;
+        height: 345px;
+    }
+    .header__menu-choseitem-pricelist {
+        padding-top: 0px;
+    }
 
+    .header__menu-choseitem-basket {
+        left: 6.5rem;
+    }
+    .header__menu-chose {
+        width: 860px;
+    }
+    .header__menu-choseitem-text {
+        font-size: 16px;
+    }
 }
 
 @media(max-width: 900px) {
     .body__content-contactimg {
         display: none;
     }
+    .header__main-profile {
+        margin-right: 131px;
+    }
+    .header__menu-list {
+        max-width: 700px;
+    }
+    .header__menu-listitem {
+        font-size: 14px;
+    }
 }
 
 @media(max-width: 870px) {
+    .header__main-profile {
+        margin-right: 190px;
+    }
+
     .body__content-delivery {
         display: none;
     }
@@ -130,6 +183,31 @@
     }
 }
 
+
+@media (max-width: 830px) {
+    .header__menu-list {
+        flex-wrap: wrap;
+    }
+    .header__menu-listitem {
+        margin-bottom: 10px;
+    }
+    .header__menu-choseitem {
+        width: 306px;
+        height: 404px;
+    }
+
+    .header__menu-choseitem-price {
+        font-size: 32px;
+        bottom: 2.2rem;
+        left: 1.9rem;
+    }
+    .header__menu-choseitem-basket {
+        font-size: 16px;
+        left: 9.75rem;
+    }
+}
+
+
 @media(max-width:869px) {
     .body__content-mainMenu-description{
         padding-bottom: 9px;
@@ -140,9 +218,27 @@
     .header__main-nav {
         padding-right: 0px;
     }
+
+    .header__menu-choseitem-text {
+        font-size: 20px;
+    }
+    .header__menu-listitem {
+        font-size: 16px;
+    }
+    .header__menu-chose {
+        width: 100%;
+        justify-content: center;
+    }
+    .header__main-profile {
+        margin-right: 0px;
+    }
+
 }
 
 @media(max-width: 780px){
+    .footer__text {
+        display: none;
+    }
     .text {
         font-size: 14px;
     }
@@ -231,6 +327,19 @@
 }
 
 @media(max-width: 610px) {
+    .header__main-logo {
+        margin-left: 5px;
+    }
+    .header__main-repeat {
+        min-width: 95px;
+        max-width: 95px;
+    }
+    .header__main-burger {
+        margin-left: 29px;
+    }
+    .header__main-icon {
+        margin-left: 27px;
+    }
 
     .menu-text p {
         font-size: 36px;
@@ -270,7 +379,8 @@
         display: none;
     }
     .footer__list {
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -301,6 +411,24 @@
     }
 }
 
+@media (max-width:430px) {
+    .container-fluid {
+        position: relative;
+        left: -42px;
+        top: 40px;
+    }
+    .header__main-repeat__downblock {
+        display: none;
+    }
+    .header__main-repeat {
+        height: 150px;
+        position: relative;
+        z-index: 10;
+    }
+    
+}
+
+
 @media (max-width: 400px) {
     .body__content-info-title {
         font-size: 42px;
@@ -325,6 +453,12 @@
     .header__main-title {
         display: none;
     }
+    .container-fluid {
+        left: -74px;
+    }
+    .header__menu-listwrapper {
+        padding-top: 95px;
+    }
 }
 
 @media (max-height: 800px) {
@@ -336,4 +470,20 @@
     .menu-icon {
         display: none;
     }
+}
+
+@media (max-width:370px) {
+    .body__content-contactitem {
+        width: 389px;
+    }
+    .body__content-contactbook {
+        left: 12.5rem;
+    }
+
+}
+@media (max-width: 330px) {
+    .footer__list-pay {
+        display: none;
+    }
+    
 }
