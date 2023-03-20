@@ -87,6 +87,11 @@ bookBtn.forEach(function(item) {
    })
  }
 
+accountBlock = document.querySelector('.account__block');
+accountIcon = document.querySelector('.header__main-account')
+accountIcon.addEventListener('click', function(){
+    accountBlock.classList.toggle('none')
+})
 
 
  
