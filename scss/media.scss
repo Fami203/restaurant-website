@@ -14,18 +14,15 @@
             width: 126px;
         }
     }
-    .header__main-profile {
-        margin-right: 40px;
-    }
     .header__menu-list {
         overflow-y: scroll;
-        max-width: 1000px;
+        max-width: 850px;
     }
 }
 
 @media(max-width: 1100px) {
     .header__main-profile {
-        margin-right: 140px;
+        margin-right: 50px;
     }
     .header__menu-choseitem {
         width: 270px;
@@ -40,6 +37,9 @@
         left: 1.5rem;
         font-size: 28px;
     }
+    .header__menu-list {
+        max-width: 900px;
+    }
 }
 
 @media(max-width: 1000px) {
@@ -47,6 +47,10 @@
         &-info-secondtext {
             display: none;
         }
+    }
+
+    .body__menu {
+        column-gap: 50px;
     }
     .infotitle {
         font-size: 16px;
@@ -145,13 +149,28 @@
         font-size: 16px;
     }
 }
+@media (max-width: 930px) {
+    .body__menu {
+        display: block;
+    }
+    .body__menu-photoitem-big {
+        margin: 0 auto;
+    }
+    .body__menu-content-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    // .body__menu-photoitem-big {
+    //     width: 316px;
+    //     height: auto;
+    // }
+    
+}
 
 @media(max-width: 900px) {
     .body__content-contactimg {
         display: none;
-    }
-    .header__main-profile {
-        margin-right: 131px;
     }
     .header__menu-list {
         max-width: 700px;
@@ -383,6 +402,16 @@
         align-items: center;
     }
 }
+@media (max-width: 535px) {
+    .body__menu-photoitem-big {
+        width: 316px;
+        height: auto;
+    }
+    .body__menu-photoitem-smallitem {
+        width: 90px;
+        height: auto;
+    }    
+}
 
 @media (max-width: 520px) {
     .body__content-menu-description {
@@ -459,6 +488,9 @@
     .header__menu-listwrapper {
         padding-top: 95px;
     }
+    .table-booking__btn {
+        margin-right: 20px;
+    }
 }
 
 @media (max-height: 800px) {
@@ -479,11 +511,21 @@
     .body__content-contactbook {
         left: 12.5rem;
     }
-
 }
 @media (max-width: 330px) {
     .footer__list-pay {
         display: none;
     }
-    
+
+}
+@media (max-width: 360px) {
+    .container-fluid {
+        left: -85px;
+    }
+    .header__main-cabinet {
+        font-size: 14px;
+    }
+    .header__main-profile {
+        column-gap: 25px;
+    }
 }

@@ -10,15 +10,12 @@
   .body__content-contactelement {
     width: 126px; }
 
-  .header__main-profile {
-    margin-right: 40px; }
-
   .header__menu-list {
     overflow-y: scroll;
-    max-width: 1000px; } }
+    max-width: 850px; } }
 @media (max-width: 1100px) {
   .header__main-profile {
-    margin-right: 140px; }
+    margin-right: 50px; }
 
   .header__menu-choseitem {
     width: 270px;
@@ -30,10 +27,16 @@
 
   .header__menu-choseitem-price {
     left: 1.5rem;
-    font-size: 28px; } }
+    font-size: 28px; }
+
+  .header__menu-list {
+    max-width: 900px; } }
 @media (max-width: 1000px) {
   .body__content-info-secondtext {
     display: none; }
+
+  .body__menu {
+    column-gap: 50px; }
 
   .infotitle {
     font-size: 16px;
@@ -114,12 +117,20 @@
 
   .header__menu-choseitem-text {
     font-size: 16px; } }
+@media (max-width: 930px) {
+  .body__menu {
+    display: block; }
+
+  .body__menu-photoitem-big {
+    margin: 0 auto; }
+
+  .body__menu-content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px; } }
 @media (max-width: 900px) {
   .body__content-contactimg {
     display: none; }
-
-  .header__main-profile {
-    margin-right: 131px; }
 
   .header__menu-list {
     max-width: 700px; }
@@ -318,6 +329,14 @@
   .footer__list {
     justify-content: space-between;
     align-items: center; } }
+@media (max-width: 535px) {
+  .body__menu-photoitem-big {
+    width: 316px;
+    height: auto; }
+
+  .body__menu-photoitem-smallitem {
+    width: 90px;
+    height: auto; } }
 @media (max-width: 520px) {
   .body__content-menu-description {
     margin-left: -200px; }
@@ -378,7 +397,10 @@
     left: -74px; }
 
   .header__menu-listwrapper {
-    padding-top: 95px; } }
+    padding-top: 95px; }
+
+  .table-booking__btn {
+    margin-right: 20px; } }
 @media (max-height: 800px) {
   .menu-open {
     row-gap: 50px; } }
@@ -394,5 +416,14 @@
 @media (max-width: 330px) {
   .footer__list-pay {
     display: none; } }
+@media (max-width: 360px) {
+  .container-fluid {
+    left: -85px; }
+
+  .header__main-cabinet {
+    font-size: 14px; }
+
+  .header__main-profile {
+    column-gap: 25px; } }
 
 /*# sourceMappingURL=media.css.map */
